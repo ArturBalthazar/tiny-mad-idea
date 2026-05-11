@@ -1,0 +1,20 @@
+{
+  "name": "tiny-mad-idea",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "server": "node chatbot-server.cjs",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  },
+  "dependencies": {
+    "three": "^0.170.0",
+    "express": "^4.21.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.0",
+    "openai": "^4.73.0"
+  }
+}

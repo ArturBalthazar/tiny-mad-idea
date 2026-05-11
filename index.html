@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Tiny Mad Idea</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Landscape-only warning -->
+    <div id="landscape-warning">
+      <p>Please rotate your device to landscape mode.</p>
+    </div>
+
+    <!-- Intro overlay -->
+    <div id="intro-overlay">
+      <div id="intro-window">
+        <h1>The Tiny Mad Idea</h1>
+        <p>
+          An interactive experience exploring <em>the tiny mad idea</em>&thinsp;&mdash;&thinsp;a
+          concept from <strong>A&nbsp;Course&nbsp;in&nbsp;Miracles</strong> that
+          attempts to describe how the world of separation came into being.
+        </p>
+        <p>
+          You will move through a symbolic journey from perfect oneness, through
+          the moment of questioning, into fragmentation and
+          identity&thinsp;&mdash;&thinsp;and perhaps, back again.
+        </p>
+        <p class="intro-note">Best experienced with headphones.</p>
+        <button id="continue-btn" disabled>Loading&hellip;</button>
+      </div>
+    </div>
+
+    <!-- Heaven layer -->
+    <div id="heaven">
+      <div id="heaven-words"></div>
+      <div id="scroll-tooltip">&darr;&ensp;Scroll down&ensp;&darr;</div>
+    </div>
+
+    <!-- 3D canvas -->
+    <div id="portal-container" style="display: none">
+      <canvas id="three-canvas"></canvas>
+    </div>
+
+    <!-- Ego messages -->
+    <div id="ego-messages"></div>
+
+    <!-- What-if typing text -->
+    <div id="what-if-text"></div>
+
+    <!-- Chat interface -->
+    <div id="chat-container">
+      <div id="chat-messages"></div>
+      <input
+        id="chat-input"
+        type="text"
+        placeholder="Type here..."
+        autocomplete="off"
+      />
+    </div>
+
+    <!-- Fragmentation video -->
+    <video
+      id="fragmentation-video"
+      src="/fragmentation.mp4"
+      preload="auto"
+      playsinline
+    ></video>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
