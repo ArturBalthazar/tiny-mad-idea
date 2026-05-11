@@ -490,7 +490,7 @@ async function transitionToChat() {
 /* ─── Main flow ─── */
 
 async function load() {
-  const midResp = await fetch('/mz_545_1_format0.mid');
+  const midResp = await fetch(`${import.meta.env.BASE_URL}mz_545_1_format0.mid`);
   const midBuf = await midResp.arrayBuffer();
   const midi = parseMidi(midBuf);
   midiNotes = midi.notes;

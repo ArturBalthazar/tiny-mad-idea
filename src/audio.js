@@ -55,10 +55,10 @@ export class AudioEngine {
     this.ctx = new AudioContext();
 
     const [mozartBuf, glassBuf, horrorBuf, popBuf] = await Promise.all([
-      this._loadBuffer('/mz_545_1.mp3'),
-      this._loadBuffer('/glass.m4a'),
-      this._loadBuffer('/horror.m4a'),
-      this._loadBuffer('/pop.m4a'),
+      this._loadBuffer(`${import.meta.env.BASE_URL}mz_545_1.mp3`),
+      this._loadBuffer(`${import.meta.env.BASE_URL}glass.m4a`),
+      this._loadBuffer(`${import.meta.env.BASE_URL}horror.m4a`),
+      this._loadBuffer(`${import.meta.env.BASE_URL}pop.m4a`),
     ]);
 
     this.mozartBuffer = mozartBuf;

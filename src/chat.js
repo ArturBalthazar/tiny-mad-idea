@@ -1,6 +1,9 @@
 /* ─── AI Chat Module ─── */
 
-const CHAT_SERVER = 'http://localhost:8081';
+const CHAT_SERVER =
+    window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+        ? 'http://127.0.0.1:8081'
+        : 'https://tiny-mad-idea.onrender.com';
 const MAX_USER_MESSAGES = 10;
 
 let chatHistory = [];       // { role: 'user'|'assistant', content }[]
